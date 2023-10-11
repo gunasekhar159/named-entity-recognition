@@ -5,24 +5,28 @@
 To develop an LSTM-based model for recognizing the named entities in the text.
 
 ## Problem Statement and Dataset
+Named-entity recognition (NER) (also known as entity identification, entity chunking and entity extraction) is a subtask of information extraction that seeks to locate and classify named entities mentioned in unstructured text into pre-defined categories such as person names, organisations, locations, medical codes, time expressions, quantities, monetary values, percentages, etc. It adds a wealth of semantic knowledge to your content and helps you to promptly understand the subject of any given text.
 
-## Neural Network Model
-
-Include the neural network model diagram.
+![image](https://github.com/gunasekhar159/named-entity-recognition/assets/95043391/1587d177-ee1c-4c18-81d4-93c443b3c986)
 
 ## DESIGN STEPS
 
 ### STEP 1:
+Load the NER dataset.
 
-### STEP 2:
+### STEP 2
+:Prepare the dataset for training.
 
 ### STEP 3:
+Create and train the model.
 
-Write your own steps
+### STEP 4:
+Predict the output for the test data and compare it with the actual value.
 
 ## PROGRAM
-Name : v.charan sai
-Reg no : 212221240061
+```
+Name : M.Gunasekhar
+Reg no : 212221240014
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
@@ -123,16 +127,20 @@ print("-" *30)
 for w, true, pred in zip(X_test[i], y_true, p[0]):
     print("{:15}{}\t{}".format(words[w-1], tags[true], tags[pred]))
 
-
+```
 ## OUTPUT
+### Training Loss
 ![image](https://github.com/gunasekhar159/named-entity-recognition/assets/95043391/dfcf7654-26a2-4e54-abd5-54161d36d3da)
 
 
-### Training Loss, Validation Loss Vs Iteration Plot
+### Validation Loss Vs Iteration Plot
+![image](https://github.com/gunasekhar159/named-entity-recognition/assets/95043391/bcd77951-7ad4-45e3-9840-6c60f3ac8f31)
 
 
 
 ### Sample Text Prediction
-Include your sample text prediction here.
+![image](https://github.com/gunasekhar159/named-entity-recognition/assets/95043391/0c9f8602-eeeb-4c95-9b5a-069b9ecb59c9)
+
 
 ## RESULT
+Successfully developed LSTM based rnn model for named-entity-recognition.
